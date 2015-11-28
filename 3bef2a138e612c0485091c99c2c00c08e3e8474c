@@ -45,6 +45,30 @@
       "revId": "3bef2a138e612c0485091c99c2c00c08e3e8474c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff82abbf_138873c4",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 291,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2015-11-28T08:54:36Z",
+      "side": 1,
+      "message": "A lot of devices kanged the extract-files from some device that was broken and did exactly what you\u0027re saying.\n\nThe extract-files that we\u0027re should work right.  When you write:\n\nA:B\n\nit copies src/B to dest/B if exists and otherwise copies src/A to dest/B.  That lets you go both ways (either stock -\u003e CM or CM -\u003e CM).\n\nPersonally, I refuse to manually edit vendor makefiles which makes sure I keep my proprietary files list up-to-date.\n\nMy workflow is to build CM, make changes in my output directory and then run extract-files to pull in those changes.  That way I can\u0027t screw up the makefiles, leave dangling blobs, etc.",
+      "parentUuid": "ff82abbf_93efa386",
+      "range": {
+        "startLine": 291,
+        "startChar": 0,
+        "endLine": 291,
+        "endChar": 66
+      },
+      "revId": "3bef2a138e612c0485091c99c2c00c08e3e8474c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
