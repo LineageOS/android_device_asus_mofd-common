@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ff82abbf_d3e3eba3",
+        "filename": "keystore/KeystoreWrapper.cpp",
+        "patchSetId": 1
+      },
+      "lineNbr": 35,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2015-11-28T07:52:12Z",
+      "side": 1,
+      "message": "Just nitpicking but, keystore module :)",
+      "range": {
+        "startLine": 35,
+        "startChar": 37,
+        "endLine": 35,
+        "endChar": 43
+      },
+      "revId": "3bef2a138e612c0485091c99c2c00c08e3e8474c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
