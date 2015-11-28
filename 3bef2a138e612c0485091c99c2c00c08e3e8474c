@@ -22,6 +22,29 @@
       "revId": "3bef2a138e612c0485091c99c2c00c08e3e8474c",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "ff82abbf_93efa386",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 291,
+      "author": {
+        "id": 8640
+      },
+      "writtenOn": "2015-11-28T07:54:05Z",
+      "side": 1,
+      "message": "This is well and good IF you extract from stock, but if someone extracts from CM then they will replace the actual module with the wrapper?  I was always told we should set up to extract from CM?",
+      "range": {
+        "startLine": 291,
+        "startChar": 0,
+        "endLine": 291,
+        "endChar": 66
+      },
+      "revId": "3bef2a138e612c0485091c99c2c00c08e3e8474c",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
