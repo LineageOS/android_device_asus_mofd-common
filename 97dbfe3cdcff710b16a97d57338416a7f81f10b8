@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "7f7f9b97_967facaa",
+        "filename": "cmactions/AndroidManifest.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 61,
+      "author": {
+        "id": 13589
+      },
+      "writtenOn": "2015-12-20T18:08:17Z",
+      "side": 1,
+      "message": "For information, if you want to remove the disharmonious summary text below Gestures in Settings, remove this metadata.",
+      "revId": "97dbfe3cdcff710b16a97d57338416a7f81f10b8",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
