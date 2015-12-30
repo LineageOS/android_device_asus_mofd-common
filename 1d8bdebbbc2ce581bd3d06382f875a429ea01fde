@@ -1,0 +1,38 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "3fce034c_00f6f690",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 366,
+      "author": {
+        "id": 6753
+      },
+      "writtenOn": "2015-12-30T07:37:25Z",
+      "side": 1,
+      "message": "Doze on screen off (refers specifically to power key off, not idle off if I\u0027m reading dozeService code right) seems to force display into a different power state than idle timeout.",
+      "revId": "1d8bdebbbc2ce581bd3d06382f875a429ea01fde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "3fce034c_e0f88a7d",
+        "filename": "overlay/frameworks/base/packages/SystemUI/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 38,
+      "author": {
+        "id": 6753
+      },
+      "writtenOn": "2015-12-30T07:37:25Z",
+      "side": 1,
+      "message": "PICK_UP GESTURE still doesn\u0027t seem to be working properly",
+      "revId": "1d8bdebbbc2ce581bd3d06382f875a429ea01fde",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
