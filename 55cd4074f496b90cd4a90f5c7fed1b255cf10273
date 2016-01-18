@@ -1,0 +1,27 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_cc7fb9a9",
+        "filename": "rootdir/etc/init.mofd_v1.rc",
+        "patchSetId": 2
+      },
+      "lineNbr": 204,
+      "author": {
+        "id": 14763
+      },
+      "writtenOn": "2016-01-18T17:17:08Z",
+      "side": 1,
+      "message": "Why tab?",
+      "range": {
+        "startLine": 204,
+        "startChar": 0,
+        "endLine": 204,
+        "endChar": 1
+      },
+      "revId": "55cd4074f496b90cd4a90f5c7fed1b255cf10273",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
