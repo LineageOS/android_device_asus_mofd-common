@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_d8abc11a",
+        "filename": "proprietary-files.txt",
+        "patchSetId": 1
+      },
+      "lineNbr": 340,
+      "author": {
+        "id": 6753
+      },
+      "writtenOn": "2016-02-03T08:19:03Z",
+      "side": 1,
+      "message": "Can\u0027t identify these 4, running grep on the stock system dump and these are not called anywhere.",
+      "revId": "9c15c4f3d1f491a9974de028cbc645e9d4a30925",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
