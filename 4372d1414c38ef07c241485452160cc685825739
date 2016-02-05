@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "1fcbff3d_5b6fc691",
+        "filename": "sepolicy/sensorhubd.te",
+        "patchSetId": 15
+      },
+      "lineNbr": 8,
+      "author": {
+        "id": 6351
+      },
+      "writtenOn": "2016-02-05T17:56:48Z",
+      "side": 1,
+      "message": "I think that this probably needs a factory_file:dir search as well.",
+      "revId": "4372d1414c38ef07c241485452160cc685825739",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
