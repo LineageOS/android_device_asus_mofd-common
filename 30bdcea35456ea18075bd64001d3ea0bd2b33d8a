@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "ffb9cba7_36833d07",
+        "filename": "setup-makefiles.sh",
+        "patchSetId": 6
+      },
+      "lineNbr": 202,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2016-02-12T15:32:47Z",
+      "side": 1,
+      "message": "just for your future reference, you don\u0027t need to specify LOCAL_CERTIFICATE for anything but .apk and .jar files. This tells the build system to re-sign a package with a platform key (which, hopefully is skipped in this case of these service blobs).",
+      "revId": "30bdcea35456ea18075bd64001d3ea0bd2b33d8a",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
