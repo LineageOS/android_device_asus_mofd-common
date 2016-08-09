@@ -145,3 +145,7 @@
 
 # wifi
 /config/wifi(/.*)?                      u:object_r:wifi_config_file:s0
+
+# sysfs files used by wificond
+/sys/module/bcmdhd/parameters/firmware_path     u:object_r:sysfs_wlan_fwpath:s0
+

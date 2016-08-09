@@ -304,6 +304,7 @@ PRODUCT_PACKAGES += \
     libwpa_client \
     lib_driver_cmd_bcmdhd \
     hostapd \
+    wificond \
     wpa_supplicant \
     wpa_supplicant.conf
 
