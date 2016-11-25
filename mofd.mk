@@ -85,6 +85,10 @@ PRODUCT_COPY_FILES += \
 ADDITIONAL_DEFAULT_PROPERTIES += \
     ro.frp.pst=/dev/block/by-name/persistent
 
+# Flip Cover App
+PRODUCT_PACKAGES += \
+    FlipFlap
+
 # GPS
 PRODUCT_COPY_FILES += \
     device/asus/mofd-common/configs/gps.conf:system/etc/gps.conf \
