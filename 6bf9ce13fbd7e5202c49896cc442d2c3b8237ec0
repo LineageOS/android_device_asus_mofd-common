@@ -16,6 +16,24 @@
       "revId": "6bf9ce13fbd7e5202c49896cc442d2c3b8237ec0",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5f681702_2a31b90c",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 6753
+      },
+      "writtenOn": "2016-12-07T02:39:48Z",
+      "side": 0,
+      "message": "https://android.googlesource.com/platform/frameworks/base/+/android-7.1.1_r4/core/res/res/values/config.xml#688",
+      "parentUuid": "5f681702_8a73ade7",
+      "revId": "6bf9ce13fbd7e5202c49896cc442d2c3b8237ec0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
