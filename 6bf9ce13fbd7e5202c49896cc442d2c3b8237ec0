@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5f681702_8a73ade7",
+        "filename": "overlay/frameworks/base/core/res/res/values/config.xml",
+        "patchSetId": 3
+      },
+      "lineNbr": 66,
+      "author": {
+        "id": 7880
+      },
+      "writtenOn": "2016-12-07T02:20:37Z",
+      "side": 0,
+      "message": "Is lidControlsSleep an Aosp overlay?",
+      "revId": "6bf9ce13fbd7e5202c49896cc442d2c3b8237ec0",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
