@@ -273,9 +273,9 @@ service drm /system/bin/drmserver
 
 service sensorhubd /system/bin/sensorhubd
     class main
-    user system
-    group system
-    socket sensorhubd stream 660 system system
+    user root
+    group root system readproc
+    socket sensorhubd stream 666 system system
 
 on charger
     mount ext4 /dev/block/by-name/system /system ro noatime barrier=1,data=ordered
@@ -296,8 +296,8 @@ on charger
 
 #Turn on VPROG2 Power rail to avoid power leakage in Sensor
 
-#    chmod 0664 /sys/bus/pci/devices/0000:00:16.1/control
-#    write /sys/bus/pci/devices/0000:00:16.1/control "0 1 0"
+    chmod 0664 /sys/bus/pci/devices/0000:00:16.1/control
+    write /sys/bus/pci/devices/0000:00:16.1/control "0 1 0"
 
 on property:persist.asus.instant_camera=1
     write sys/devices/platform/gpio-keys/enabled_wakeup 115
