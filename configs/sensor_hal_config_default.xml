@@ -152,7 +152,6 @@
       <power>0.35</power>
       <minDelay>-1</minDelay>
       <maxDelay>0</maxDelay>
-      <wakeup>1</wakeup>
     </device>
   </sensor>
   <sensor type="tilt_detector" category="libsensorhub">
@@ -165,7 +164,6 @@
       <power>0.35</power>
       <minDelay>-1</minDelay>
       <maxDelay>0</maxDelay>
-      <wakeup>1</wakeup>
     </device>
   </sensor>
   <sensor type="pick_up_gesture" category="libsensorhub">
@@ -178,7 +176,6 @@
       <power>0.35</power>
       <minDelay>-1</minDelay>
       <maxDelay>0</maxDelay>
-      <wakeup>1</wakeup>
     </device>
   </sensor>
   <sensor type="step_detector" category="libsensorhub">
@@ -284,7 +281,6 @@
       <power>0.35</power>
       <minDelay>0</minDelay>
       <maxDelay>0</maxDelay>
-      <wakeup>1</wakeup>
       <fifoMaxEventCount>2048</fifoMaxEventCount>
     </device>
   </sensor>
@@ -429,3 +425,4 @@
     </device>
   </sensor>
 </sensor_hal_config>
+
