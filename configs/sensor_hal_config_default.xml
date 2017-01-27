@@ -214,7 +214,6 @@
       <power>0.35</power>
       <minDelay>-1</minDelay>
       <maxDelay>0</maxDelay>
-      <wakeup>1</wakeup>
     </device>
   </sensor>
   <sensor type="shake" category="libsensorhub">
