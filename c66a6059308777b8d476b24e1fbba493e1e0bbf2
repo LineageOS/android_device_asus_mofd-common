@@ -140,6 +140,29 @@
     },
     {
       "key": {
+        "uuid": "9a437d4f_9d031db8",
+        "filename": "sepolicy/rild.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 2,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:14:34Z",
+      "side": 1,
+      "message": "This also looks too broad",
+      "range": {
+        "startLine": 2,
+        "startChar": 0,
+        "endLine": 2,
+        "endChar": 34
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
         "uuid": "9a437d4f_fd5d89ea",
         "filename": "sepolicy/rild.te",
         "patchSetId": 30
