@@ -1,0 +1,297 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "9a437d4f_bd48212e",
+        "filename": "sepolicy/audioserver.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 10,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "I bet this isn\u0027t really needed",
+      "range": {
+        "startLine": 10,
+        "startChar": 0,
+        "endLine": 10,
+        "endChar": 35
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_ddf9a5c9",
+        "filename": "sepolicy/bootanim.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "This looks too open. Can you label the file on rootfs that is accessed?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 44
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_7d52b9de",
+        "filename": "sepolicy/mediacodec.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "This looks too open",
+      "range": {
+        "startLine": 3,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 46
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_5d5ff5e5",
+        "filename": "sepolicy/mediadrmserver.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "This looks too open",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 50
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_3d6431b8",
+        "filename": "sepolicy/priv_app.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "These are all too open",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 3,
+        "endChar": 40
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_1d596dfe",
+        "filename": "sepolicy/pvrsrvctl.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "This looks too open",
+      "range": {
+        "startLine": 7,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 45
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_fd5d89ea",
+        "filename": "sepolicy/rild.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "Dude, no.",
+      "range": {
+        "startLine": 14,
+        "startChar": 0,
+        "endLine": 14,
+        "endChar": 36
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_dd72c57b",
+        "filename": "sepolicy/rild.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 16,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "Maybe, but these look pretty open. Could you label the usb_device?",
+      "range": {
+        "startLine": 15,
+        "startChar": 0,
+        "endLine": 16,
+        "endChar": 45
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_7d69998a",
+        "filename": "sepolicy/sensorhubd.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 12,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "These are too open. Label the necessary sysfs nodes",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 12,
+        "endChar": 41
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_9d6c3d9e",
+        "filename": "sepolicy/sensorhubd.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 13,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "This looks too open",
+      "range": {
+        "startLine": 11,
+        "startChar": 0,
+        "endLine": 13,
+        "endChar": 46
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_5d06d5cf",
+        "filename": "sepolicy/shell.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 1,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "Is this really needed?",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 1,
+        "endChar": 35
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_3d0b11d8",
+        "filename": "sepolicy/system_server.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 14,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "no",
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "9a437d4f_1d104d00",
+        "filename": "sepolicy/untrusted_app.te",
+        "patchSetId": 30
+      },
+      "lineNbr": 7,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-01T22:06:40Z",
+      "side": 1,
+      "message": "This file should not exist",
+      "range": {
+        "startLine": 1,
+        "startChar": 0,
+        "endLine": 7,
+        "endChar": 42
+      },
+      "revId": "c66a6059308777b8d476b24e1fbba493e1e0bbf2",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
