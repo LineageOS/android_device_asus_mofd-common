@@ -42,12 +42,12 @@ public class TouchscreenGestures {
 
     // Id, name, keycode
     private static final TouchscreenGesture[] TOUCHSCREEN_GESTURES = {
-        new TouchscreenGesture(0, "Letter C", 265),
-        new TouchscreenGesture(1, "Letter e", 266),
-        new TouchscreenGesture(2, "Letter S", 267),
-        new TouchscreenGesture(3, "Letter V", 263),
-        new TouchscreenGesture(4, "Letter W", 268),
-        new TouchscreenGesture(5, "Letter Z", 264),
+        new TouchscreenGesture(0, "Letter C", 249),
+        new TouchscreenGesture(1, "Letter e", 250),
+        new TouchscreenGesture(2, "Letter S", 251),
+        new TouchscreenGesture(3, "Letter V", 252),
+        new TouchscreenGesture(4, "Letter W", 253),
+        new TouchscreenGesture(5, "Letter Z", 254),
     };
 
     private static final int KEY_MASK_GESTURE_CONTROL = 0x40;
