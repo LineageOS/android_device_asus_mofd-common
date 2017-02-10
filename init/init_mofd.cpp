@@ -46,19 +46,38 @@
 #define MEMINFO_KEY "MemTotal:"
 #define ZRAM_MEM_THRESHOLD 3000000
 
+/* Intel kernel paths */
+char const *intel_path[] = {
+"/sys/kernel/fw_update/fw_info/ifwi_version",
+"/sys/kernel/fw_update/fw_info/ifwi_version",
+"/sys/kernel/fw_update/fw_info/chaabi_version",
+"/sys/kernel/fw_update/fw_info/mia_version",
+"/sys/kernel/fw_update/fw_info/scu_bs_version",
+"sys/kernel/fw_update/fw_info/scu_version",
+"/sys/kernel/fw_update/fw_info/ia32fw_version",
+"/sys/kernel/fw_update/fw_info/valhooks_version",
+"/sys/kernel/fw_update/fw_info/punit_version",
+"/sys/kernel/fw_update/fw_info/ucode_version",
+"/sys/kernel/fw_update/fw_info/pmic_nvm_version",
+"/sys/devices/virtual/misc/watchdog/counter",
+"/proc/sys/kernel/osrelease" };
+
 /* Intel props */
-#define IFWI_PATH       "/sys/kernel/fw_update/fw_info/ifwi_version"
-#define CHAABI_PATH     "/sys/kernel/fw_update/fw_info/chaabi_version"
-#define MIA_PATH        "/sys/kernel/fw_update/fw_info/mia_version"
-#define SCU_BS_PATH     "/sys/kernel/fw_update/fw_info/scu_bs_version"
-#define SCU_PATH        "/sys/kernel/fw_update/fw_info/scu_version"
-#define IA32FW_PATH     "/sys/kernel/fw_update/fw_info/ia32fw_version"
-#define VALHOOKS_PATH   "/sys/kernel/fw_update/fw_info/valhooks_version"
-#define PUNIT_PATH      "/sys/kernel/fw_update/fw_info/punit_version"
-#define UCODE_PATH      "/sys/kernel/fw_update/fw_info/ucode_version"
-#define PMIC_NVM_PATH   "/sys/kernel/fw_update/fw_info/pmic_nvm_version"
-#define WATCHDOG_PATH   "/sys/devices/virtual/misc/watchdog/counter"
-#define OSRELEASE_PATH  "/proc/sys/kernel/osrelease"
+char const *intel_prop[] = {
+"sys.ifwi.version",
+"sys.chaabi.version",
+"sys.mia.version",
+"sys.scu_bs.version",
+"sys.scu.version",
+"sys.ia32fw.version",
+"sys.valhooks.version",
+"sys.punit.version",
+"sys.ucode.version",
+"sys.pmic_nvm.version",
+"sys.ucode.version",
+"sys.watchdog.previous.counter",
+"sys.ucode.version"
+};
 
 static int read_file2(const char *fname, char *data, int max_size)
 {
@@ -130,52 +149,12 @@ static void intel_props() {
 
     char buf[BUF_SIZE];
 
-    if(read_file2(IFWI_PATH, buf, sizeof(buf))) {
-            property_set("sys.ifwi.version", buf);
-    }
-
-    if(read_file2(CHAABI_PATH, buf, sizeof(buf))) {
-            property_set("sys.chaabi.version", buf);
-    }
-
-    if(read_file2(MIA_PATH, buf, sizeof(buf))) {
-            property_set("sys.mia.version", buf);
-    }
-
-    if(read_file2(SCU_BS_PATH, buf, sizeof(buf))) {
-            property_set("sys.scubs.version", buf);
-    }
-
-    if(read_file2(SCU_PATH, buf, sizeof(buf))) {
-            property_set("sys.scu.version", buf);
-    }
-
-    if(read_file2(IA32FW_PATH, buf, sizeof(buf))) {
-            property_set("sys.ia32.version", buf);
-    }
-
-    if(read_file2(VALHOOKS_PATH, buf, sizeof(buf))) {
-            property_set("sys.valhooks.version", buf);
-    }
-
-    if(read_file2(PUNIT_PATH, buf, sizeof(buf))) {
-            property_set("sys.punit.version", buf);
-    }
-
-    if(read_file2(UCODE_PATH, buf, sizeof(buf))) {
-            property_set("sys.ucode.version", buf);
-    }
-
-    if(read_file2(PMIC_NVM_PATH, buf, sizeof(buf))) {
-            property_set("sys.pmic.nvm.version", buf);
-    }
-
-    if(read_file2(WATCHDOG_PATH, buf, sizeof(buf))) {
-            property_set("sys.watchdog.previous.counter", buf);
-    }
-
-    if(read_file2(OSRELEASE_PATH, buf, sizeof(buf))) {
-            property_set("sys.kernel.version", buf);
+    for(int i=0;i<13;i++) {
+        if(read_file2(intel_path[i], buf, sizeof(buf))) {
+            __system_property_add(intel_prop[i],
+                        strlen(intel_prop[i]),
+                        buf, strlen(buf)-1);
+        }
     }
 
 }
