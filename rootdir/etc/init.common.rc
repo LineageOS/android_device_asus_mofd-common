@@ -529,6 +529,7 @@ service pvrsrvctl /system/vendor/bin/pvrsrvctl --no-module --start
     class core
     oneshot
     user root
+    group graphics readproc
 
 service charger_app /charger
     class charger
