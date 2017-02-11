@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "key": {
+        "uuid": "5a2585a7_7c8f8524",
+        "filename": "sepolicy/rild.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 5531
+      },
+      "writtenOn": "2017-02-11T19:17:19Z",
+      "side": 1,
+      "message": "Haven\u0027t managed to figure out which device this is yet?",
+      "revId": "b1c6b46f8bd93a172e357516b24229340eca3c7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
+    }
+  ]
+}
