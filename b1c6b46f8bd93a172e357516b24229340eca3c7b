@@ -16,6 +16,24 @@
       "revId": "b1c6b46f8bd93a172e357516b24229340eca3c7b",
       "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
       "unresolved": false
+    },
+    {
+      "key": {
+        "uuid": "5a2585a7_e2abccd4",
+        "filename": "sepolicy/rild.te",
+        "patchSetId": 6
+      },
+      "lineNbr": 3,
+      "author": {
+        "id": 6753
+      },
+      "writtenOn": "2017-02-11T23:23:53Z",
+      "side": 1,
+      "message": "nope, this is the denial, and some related notes I have. \nhttp://pastebin.com/g5QrR9hV\nThis one is fatal for ril.",
+      "parentUuid": "5a2585a7_7c8f8524",
+      "revId": "b1c6b46f8bd93a172e357516b24229340eca3c7b",
+      "serverId": "1ec6b3db-b2c1-4fa4-84a2-4c7efe89ba71",
+      "unresolved": false
     }
   ]
 }
