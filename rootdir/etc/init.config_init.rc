@@ -3,6 +3,7 @@ on fs
     mkdir /local_cfg/platform
     mkdir /local_cfg/telephony_config
     mkdir /local_cfg/audiocomms_config
+    restorecon_recursive /config
     start config_init
 
 service config_init /system/bin/config_init.sh
