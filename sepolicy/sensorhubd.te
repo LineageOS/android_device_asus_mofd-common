@@ -3,8 +3,8 @@ type sensorhubd, domain;
 type sensorhubd_exec, exec_type, file_type;
 init_daemon_domain(sensorhubd)
 
-allow sensorhubd asus_config_file:dir search;
-allow sensorhubd asus_config_file:file r_file_perms;
+allow sensorhubd config_file:dir search;
+allow sensorhubd config_file:file r_file_perms;
 allow sensorhubd efs_file:dir search;
 allow sensorhubd efs_file:file r_file_perms;
 allow sensorhubd factory_file:dir search;

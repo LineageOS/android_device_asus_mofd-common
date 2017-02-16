@@ -8,8 +8,8 @@ set_prop(asus_config, asus_prop)
 set_prop(asus_config, config_prop)
 set_prop(asus_config, radio_prop)
 
-allow asus_config asus_config_file:dir search;
-allow asus_config asus_config_file:file rw_file_perms;
+allow asus_config config_file:dir search;
+allow asus_config config_file:file rw_file_perms;
 allow asus_config bluetooth_efs_file:dir r_dir_perms;
 allow asus_config bluetooth_efs_file:file { rw_file_perms setattr };
 allow asus_config device:dir write;
