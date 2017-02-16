@@ -63,7 +63,6 @@ on fs
     chown system system /config/em
     chmod 0770 /config/em
     chown system system /sys/class/usb_otg/otg0/a_bus_drop
-    restorecon_recursive /config
     restorecon_recursive /factory
     restorecon_recursive /logs
 

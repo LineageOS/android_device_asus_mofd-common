@@ -2,8 +2,7 @@
 type log_file_we_dont_want_to_allow, file_type, data_file_type;
 
 # Asusconfig
-type asus_config_file, file_type, sysfs_type;
-allow file_type asus_config_file:filesystem associate;
+type config_file, file_type, sysfs_type;
 
 # Bluetooth
 type bluetooth_config_file, file_type, data_file_type;
