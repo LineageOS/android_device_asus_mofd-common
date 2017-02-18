@@ -183,6 +183,7 @@ TARGET_RECOVERY_PIXEL_FORMAT := "BGRA_8888"
 BOARD_GLOBAL_CFLAGS += -DNO_SECURE_DISCARD
 TARGET_RECOVERY_DEVICE_MODULES := libinit_mofd librecovery_updater_mofd thermald
 BOARD_HAS_LARGE_FILESYSTEM := true
+TARGET_RECOVERY_DEVICE_DIRS += device/asus/mofd-common
 
 ifeq ($(RECOVERY_VARIANT),twrp)
 TARGET_RECOVERY_FSTAB := device/asus/mofd-common/recovery/twrp.fstab
