@@ -33,7 +33,7 @@
   <!-- Ambient Display Options -->
   <string name="ambient_display_title">Tampilan ambien</string>
   <string name="hand_wave_gesture_title">Lambaian tangan</string>
-  <string name="hand_wave_gesture_summary">Kedipakan pemberitahuan saat melambaikan tangan</string>
+  <string name="hand_wave_gesture_summary">Kedipkan pemberitahuan saat melambaikan tangan</string>
   <string name="pick_up_gesture_title">Ambil</string>
   <string name="pick_up_gesture_summary">Kedipkan pemberitahuan saat diambil</string>
   <string name="pocket_gesture_title">Saku</string>
