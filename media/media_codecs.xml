@@ -79,7 +79,6 @@ Only the three quirks included above are recognized at this point:
 -->
 
 <MediaCodecs>
-    <Include href="media_codecs_google_audio.xml" />
 
     <Decoders>
         <MediaCodec name="OMX.Intel.VideoDecoder.MPEG4" type="video/mp4v-es">
@@ -156,8 +155,11 @@ Only the three quirks included above are recognized at this point:
             <Limit name="concurrent-instances" max="5" />
         </MediaCodec>
 
-       <MediaCodec name="OMX.google.gsm.decoder" type="audio/gsm" />
-       <MediaCodec name="OMX.Intel.alac.decoder" type="audio/alac" />
+        <MediaCodec name="OMX.Intel.mp3.decoder" type="audio/mpeg" />
+        <MediaCodec name="OMX.Intel.amrnb.decoder" type="audio/3gpp" />
+        <MediaCodec name="OMX.Intel.amrwb.decoder" type="audio/amr-wb" />
+        <MediaCodec name="OMX.Intel.aac.decoder" type="audio/mp4a-latm" />
+        <MediaCodec name="OMX.Intel.vorbis.decoder" type="audio/vorbis" />
     </Decoders>
 
     <Encoders>
@@ -179,8 +181,12 @@ Only the three quirks included above are recognized at this point:
             <Limit name="bitrate" range="1-10000000" />
             <Limit name="concurrent-instances" max="5" />
         </MediaCodec>
+        <MediaCodec name="OMX.Intel.amrnb.encoder" type="audio/3gpp" />
+        <MediaCodec name="OMX.Intel.amrwb.encoder" type="audio/amr-wb" />
+        <MediaCodec name="OMX.Intel.aac.encoder" type="audio/mp4a-latm" />
     </Encoders>
 
+    <Include href="media_codecs_google_audio.xml" />
     <Include href="media_codecs_google_video.xml" />
     <Include href="media_codecs_ffmpeg.xml" />
 </MediaCodecs>
