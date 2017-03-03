@@ -225,6 +225,10 @@ PRODUCT_PACKAGES += \
     thermald \
     ueventd.mofd_v1.rc
 
+# Sdcardfs
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.sys.sdcardfs=true
+
 # Sensors
 PRODUCT_COPY_FILES += \
     device/asus/mofd-common/configs/sensor_hal_config_default.xml:system/etc/sensor_hal_config_default.xml
