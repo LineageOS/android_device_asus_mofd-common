@@ -827,7 +827,6 @@ etc/firmware/psh.bin.zx550ml
 lib/hw/sensors.mofd_v1.so
 lib/libcontextarbitor.so
 lib/libsensorhub.so
-lib/libvirtualsensors.so
 
 # Thermal
 bin/thermald
