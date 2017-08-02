@@ -7,6 +7,7 @@ lib/arm/nb/libart.so
 lib/arm/nb/libaudioflinger.so
 lib/arm/nb/libbinder.so
 lib/arm/nb/libcamera_client.so
+lib/arm/nb/libcamera2ndk.so
 lib/arm/nb/libc.so
 lib/arm/nb/libcutils.so
 lib/arm/nb/libdl.so
@@ -16,6 +17,8 @@ lib/arm/nb/libGLESv1_CM.so
 lib/arm/nb/libGLESv2.so
 lib/arm/nb/libGLESv3.so
 lib/arm/nb/libgui.so
+lib/arm/nb/libhardware.so
+lib/arm/nb/libhardware_legacy.so
 lib/arm/nb/libhwui.so
 lib/arm/nb/libicui18n.so
 lib/arm/nb/libicuuc.so
@@ -32,10 +35,13 @@ lib/arm/nb/libskia.so
 lib/arm/nb/libsqlite.so
 lib/arm/nb/libstagefright.so
 lib/arm/nb/libsurfaceflinger.so
+lib/arm/nb/libtcb.so
 lib/arm/nb/libui.so
 lib/arm/nb/libutils.so
+lib/arm/nb/libvulkan.so
 lib/arm/nb/libz.so
 lib/arm/cpuinfo
+lib/arm/libaeabi_map.so
 lib/arm/libandroidfw.so
 lib/arm/libandroid_runtime.so
 lib/arm/libandroid.so
@@ -45,6 +51,7 @@ lib/arm/libaudioresampler.so
 lib/arm/libaudiospdif.so
 lib/arm/libaudioutils.so
 lib/arm/libbacktrace.so
+lib/arm/libbacktrace_offline.so
 lib/arm/libbase.so
 lib/arm/libbcc.so
 lib/arm/libbcinfo.so
@@ -77,6 +84,7 @@ lib/arm/libGLESv2.so
 lib/arm/libGLESv3.so
 lib/arm/libgui.so
 lib/arm/libhardware.so
+lib/arm/libhardware_legacy.so
 lib/arm/libharfbuzz_ng.so
 lib/arm/libhwui.so
 lib/arm/libicui18n.so
@@ -93,6 +101,7 @@ lib/arm/liblz4.so
 lib/arm/liblzma.so
 lib/arm/libmediandk.so
 lib/arm/libmedia.so
+lib/arm/libmediadrm.so
 lib/arm/libmediautils.so
 lib/arm/libmemtrack.so
 lib/arm/libmemunreachable.so
@@ -123,6 +132,7 @@ lib/arm/libradio.so
 lib/arm/libRScpp.so
 lib/arm/libRSCpuRef.so
 lib/arm/libRSDriver.so
+lib/arm/libRS_internal.so
 lib/arm/libRS.so
 lib/arm/libselinux.so
 lib/arm/libserviceutility.so
@@ -157,6 +167,7 @@ lib/arm/libwebviewchromium_plat_support.so
 lib/arm/libwilhelm.so
 lib/arm/libz.so
 lib/arm/linker
+lib/arm/xstdata
 
 # Asus tools
 bin/bcu_cpufreqrel
