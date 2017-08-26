@@ -267,6 +267,8 @@ service audioserver /system/bin/audioserver
     ioprio rt 4
     writepid /dev/cpuset/foreground/tasks /dev/stune/foreground/tasks
 
+onrestart restart audio-hal-2-0
+
 service drm /system/bin/drmserver
     class main
     user drm
