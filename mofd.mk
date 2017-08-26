@@ -65,8 +65,11 @@ PRODUCT_PROPERTY_OVERRIDES += \
 # Camera
 PRODUCT_PACKAGES += \
     bspcapability \
+    android.hardware.camera.provider@2.4-impl \
+    camera.device@3.2-impl \
     camera.mofd_v1 \
     libshim_camera \
+    libshim_camera_parameters \
     Snap
 
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
