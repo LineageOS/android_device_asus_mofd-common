@@ -28,7 +28,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
     dalvik.vm.dex2oat-swap=false
 
 # Asus properties
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.build.asus.sku=WW
 
 # Audio
@@ -70,6 +70,10 @@ PRODUCT_PACKAGES += \
     libshim_camera \
     Snap
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    media.stagefright.legacyencoder=true \
+    media.stagefright.less-secure=true
+
 # Charger
 PRODUCT_PACKAGES += \
     charger \
@@ -93,12 +97,15 @@ PRODUCT_PACKAGES += \
     android.hardware.graphics.mapper@2.0-impl \
     android.hardware.memtrack@1.0-impl
 
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
+    ro.opengles.version = 196608
+
 # Doze
 PRODUCT_PACKAGES += \
    ZenfoneDoze
 
 # Factory reset protection
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/by-name/persistent
 
 # Flip Cover App
@@ -115,14 +122,14 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.spid.gps.FrqPlan=FRQ_PLAN_26MHZ_2PPM \
     ro.spid.gps.RfType=GL_RF_47531_BRCM
 
-ADDITIONAL_DEFAULT_PROPERTIES += \
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.gnss.sv.status=true
 
 # Houdini (arm native bridge)
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.enable.native.bridge.exec=1
 
-ADDITIONAL_DEFAULT_PROPERTIES += ro.dalvik.vm.native.bridge=libhoudini.so
+PRODUCT_DEFAULT_PROPERTY_OVERRIDES += ro.dalvik.vm.native.bridge=libhoudini.so
 
 # Key layout files
 PRODUCT_COPY_FILES += \
@@ -149,6 +156,9 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.com.widevine.cachesize=16777216 \
     media.stagefright.cache-params=10240/20480/15 \
     media.aac_51_output_enabled=true \
+    persist.intel.isv.vpp = 1 \
+    persist.intel.isv.frc = 1
+
 
 PRODUCT_COPY_FILES += \
     device/asus/mofd-common/media/media_codecs.xml:system/etc/media_codecs.xml \

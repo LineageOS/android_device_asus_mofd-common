@@ -56,10 +56,6 @@ BOARD_GLOBAL_CFLAGS += -DCAMERA_VENDOR_L_COMPAT
 TARGET_PROVIDES_CAMERA_HAL := true
 TARGET_HAS_LEGACY_CAMERA_HAL1 := true
 
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    media.stagefright.legacyencoder=true \
-    media.stagefright.less-secure=true
-
 # Charger
 WITH_CM_CHARGER := false
 BOARD_CHARGER_ENABLE_SUSPEND := true
@@ -97,9 +93,6 @@ VSYNC_EVENT_PHASE_OFFSET_NS := 7500000
 SF_VSYNC_EVENT_PHASE_OFFSET_NS := 5000000
 
 BOARD_EGL_CFG := device/asus/mofd-common/configs/egl.cfg
-
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    ro.opengles.version = 196608
 
 MAX_EGL_CACHE_ENTRY_SIZE := 65536
 MAX_EGL_CACHE_SIZE := 1048576
@@ -158,10 +151,6 @@ BOARD_CUSTOM_BOOTIMG_MK := device/asus/mofd-common/mkbootimg.mk
 
 # Video Post Processing
 TARGET_HAS_ISV := true
-ADDITIONAL_DEFAULT_PROPERTIES += \
-    persist.intel.isv.vpp = 1 \
-    persist.intel.isv.frc = 1
-
 BOARD_GLOBAL_CFLAGS += -DGFX_BUF_EXT
 
 # Partitions
