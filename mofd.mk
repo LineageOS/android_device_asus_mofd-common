@@ -103,16 +103,16 @@ PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.opengles.version = 196608
 
 # Doze
-PRODUCT_PACKAGES += \
-   ZenfoneDoze
+#PRODUCT_PACKAGES += \
+#   ZenfoneDoze
 
 # Factory reset protection
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
     ro.frp.pst=/dev/block/by-name/persistent
 
 # Flip Cover App
-PRODUCT_PACKAGES += \
-    FlipFlap
+#PRODUCT_PACKAGES += \
+#    FlipFlap
 
 # GPS
 PRODUCT_COPY_FILES += \
