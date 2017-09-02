@@ -19,7 +19,7 @@ allow init radio_cache_file:dir { rw_dir_perms relabelto };
 allow init sepfs:file w_file_perms;
 
 # Allow shimlibs
-allow init { domain -lmkd }:process noatsecure;
+#allow init { domain -lmkd }:process noatsecure;
 
 allow init kernel:system module_request;
 allow init debugfs:file rw_file_perms;
