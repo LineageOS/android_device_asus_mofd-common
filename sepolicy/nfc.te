@@ -1,2 +1,2 @@
 allow nfc asus_tee_device:chr_file rw_file_perms;
-allow nfc system_file:file execmod;
+#allow nfc system_file:file execmod;
