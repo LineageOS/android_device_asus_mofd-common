@@ -34,7 +34,7 @@ def AddIfwiAssertion(info, input_zip):
       cmd = ('assert(' +
            ' || '.join(['getprop("sys.ifwi.version") == "%s"'% (b,)
                            for b in versions]) +
-           ' || abort("This package supports Ifwi Versions: %s; ' +
+           ' || abort("This package supports Ifwi Versions: ' +
            ", ".join(["%s" % (b,) for b in versions]) +
            '; this device has Ifwi version " + getprop("sys.ifwi.version") + ".");' +
            ');')
