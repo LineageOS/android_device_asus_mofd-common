@@ -198,6 +198,7 @@ lib/libproperty.so
 lib/libinterface-provider.so
 lib/libmamgr-xmm.so
 lib/libtfa9890.so
+lib/libtinyalsa.so
 lib/libtinyxml.so
 lib/parameter-framework-plugins/Audio/libremoteparameter-subsystem.so
 lib/parameter-framework-plugins/Audio/libtinyalsa_custom-subsystem.so
