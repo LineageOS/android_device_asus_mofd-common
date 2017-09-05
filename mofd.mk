@@ -261,7 +261,12 @@ PRODUCT_PACKAGES += \
 
 # Sensors
 PRODUCT_COPY_FILES += \
-    device/asus/mofd-common/configs/sensor_hal_config_default.xml:system/etc/sensor_hal_config_default.xml
+    device/asus/mofd-common/configs/sensor_hal_config_default.xml:system/etc/sensor_hal_config_default.xml \
+    device/asus/mofd-common/configs/sensors/_hals.conf:system/vendor/etc/sensors/_hals.conf
+
+PRODUCT_PACKAGES += \
+    android.hardware.sensors@1.0-impl \
+    sensors.mofd_v1
 
 # Shims
 PRODUCT_PACKAGES += \
