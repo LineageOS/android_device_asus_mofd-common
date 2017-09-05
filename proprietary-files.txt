@@ -836,7 +836,7 @@ etc/firmware/psh.bin.0000.0000.0008.0008.0001.0000
 etc/firmware/psh.bin.0000.0000.0008.0008.0001.0001
 etc/firmware/psh.bin.0000.0000.0008.0008.0002.0001
 etc/firmware/psh.bin.zx550ml
-lib/hw/sensors.mofd_v1.so
+lib/hw/sensors.mofd_v1.so:lib/hw/sensors.vendor.mofd_v1.so
 lib/libcontextarbitor.so
 lib/libsensorhub.so
 
