@@ -18,6 +18,8 @@ on early-init
 on init
     export LD_SHIM_LIBS /system/lib/libicuuc.so|libshim_icu.so:/system/lib/hw/camera.vendor.mofd_v1.so|libshim_camera.so:/system/bin/gpsd|libshim_gpsd.so:/system/lib/sensors.vendor.mofd_v1.so|libshim_sensors.so:/system/lib/libcamera_client.so|libshim_camera_parameters.so
 
+    export LD_PRELOAD libshim_gpsd.so
+
     write /sys/class/graphics/fbcon/cursor_blink 0
     mkdir /data/system/ 0770 system system
     mkdir /data/misc 01771 system misc
