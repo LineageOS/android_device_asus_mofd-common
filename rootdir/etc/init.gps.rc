@@ -44,7 +44,7 @@ on property:ro.spid.gps.tty=ttyS2
     symlink /dev/ttyS2 /dev/gps/ttyGPS
     symlink /sys/class/tty/ttyS2/../../power/control /dev/gps/ttyGPSPowerControl
 
-service gpsd /system/bin/gpsd -c /system/etc/gps.xml
-    class main
-    user gps
-    group system inet radio sdcard_rw net_admin
+#service gpsd /system/bin/gpsd -c /system/etc/gps.xml
+#    class main
+#    user gps
+#    group system inet radio sdcard_rw net_admin
