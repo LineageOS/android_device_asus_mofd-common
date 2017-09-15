@@ -840,6 +840,9 @@ lib/hw/sensors.mofd_v1.so:lib/hw/sensors.vendor.mofd_v1.so
 lib/libcontextarbitor.so
 lib/libsensorhub.so
 
+# Stlport
+lib/libstlport.so
+
 # Thermal
 bin/thermald
 
