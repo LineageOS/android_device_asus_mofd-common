@@ -39,27 +39,30 @@
        GpsPowerControlSysPath="/dev/gps/ttyGPSPowerControl"
        GpsPowerControlEnableArg="auto"
        GpsPowerControlDisableArg="auto"
-       ReAidingOnHotStart="false"
+       ReAidingOnHotStart="true"
        AssertEnabled="false"
        WakeLock="geo"
        ReAidingRetryCount="20"
-       ReAidingRetryIntervalSec="3" 
+       ReAidingRetryIntervalSec="3"
+       RILEnabled="true"
   />
 
   <gll
        LogPriMask="LOG_INFO"
-       LogFacMask="LOG_GLLAPI | LOG_NMEA | LOG_RAWDATA | LOG_GLLIO"
+       LogFacMask="LOG_GLLAPI | LOG_GLLIO"
        FrqPlan="FRQ_PLAN_26MHZ_2PPM"
        RfType="GL_RF_47531_BRCM_EXT_LNA"
-       BurstMode="true,10,20,0"
+       BurstMode="true,20,30,0"
        PsfEnablePedVdr="true"
        PsfEnablePedVdrStringent="false"
        PmmPercent="50"
+       CNoSmoothEnable="true"
+       RfAtt="GL_RF_ATT_DISABLED"
   />
 
   <gll_features
-       EnableLowPowerPmm="false"
-       EnableLowPowerPedestrian="false"
+       EnableLowPowerPmm="true"
+       EnableLowPowerPedestrian="true"
        EnableLowPowerDriving="false"
   />
 
