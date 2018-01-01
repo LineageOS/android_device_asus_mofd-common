@@ -26,7 +26,7 @@ public class LongTermOrbits {
 
     // We use the "7 day" data file
     private static final String LTO_SRC = "http://gllto.glpals.com/7day/v5/latest/lto2.dat";
-    private static final File LTO_DST = new File("/data/gps/lto.dat");
+    private static final File LTO_DST = new File("/data/gps/lto2.dat");
     private static final long DOWNLOAD_INTERVAL_DEFAULT = 259200000; /* 3 days */
 
     /**
