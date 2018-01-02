@@ -14,12 +14,6 @@
 # limitations under the License.
 #
 
-# call dalvik heap config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-dalvik-heap.mk)
-
-# call hwui memory config
-$(call inherit-product-if-exists, frameworks/native/build/phone-xxhdpi-2048-hwui-memory.mk)
-
 DEVICE_PACKAGE_OVERLAYS := \
     device/asus/mofd-common/overlay
 
@@ -83,7 +77,7 @@ PRODUCT_COPY_FILES += \
 
 # Doze
 PRODUCT_PACKAGES += \
-   ZenfoneDoze
+    ZenfoneDoze
 
 # Factory reset protection
 ADDITIONAL_DEFAULT_PROPERTIES += \
@@ -191,13 +185,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     power.mofd_v1
 
-# Radio
-PRODUCT_PROPERTY_OVERRIDES += \
-    ro.ril.status.polling.enable=0 \
-    rild.libpath=/system/lib/librapid-ril-core.so \
-    ro.telephony.default_network=9,1 \
-    ro.ril.telephony.mqanelements=5
-
 # Ramdisk
 PRODUCT_PACKAGES += \
     config_init.sh \
@@ -212,9 +199,7 @@ PRODUCT_PACKAGES += \
     init.diag.rc \
     init.gps.rc \
     init.logtool.rc \
-    init.modem.rc \
     init.mofd_v1.rc \
-    init.nfc.rc \
     init.platform.usb.rc \
     init.power.mofd_v1.rc \
     init.recovery.mofd_v1.rc \
