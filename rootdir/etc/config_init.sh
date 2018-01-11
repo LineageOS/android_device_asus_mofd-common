@@ -120,7 +120,7 @@ mount -o bind /system/etc/catalog/$config/platform /local_cfg/platform
 mount -o bind /system/etc/catalog/$config/telephony_config /local_cfg/telephony_config
 
 # ZX550ML=27
-if [ $PROJID_DETECT = 27 ]; then
+if [ "$PROJID_DETECT" == "27" ]; then
 	if [ "$AUDIO_DETECT" != "TW" ] && [ "$AUDIO_DETECT" != "CN" ] && [ "$AUDIO_DETECT" != "C3" ] && [ "$AUDIO_DETECT" != "C4" ] && [ "$AUDIO_DETECT" != "C5" ] && [ "$AUDIO_DETECT" != "VN" ] && [ "$AUDIO_DETECT" != "MY" ] && [ "$AUDIO_DETECT" != "HE" ]; then
 		mount -o bind /system/etc/catalog/V1_EUSPEC_COMM/audiocomms_config /local_cfg/audiocomms_config
 		setprop use.audio.eu.parameters "true"
@@ -130,6 +130,14 @@ if [ $PROJID_DETECT = 27 ]; then
 	fi
 else
 	mount -o bind /system/etc/catalog/V1_DSDA/audiocomms_config /local_cfg/audiocomms_config
+fi
+
+# Audio Offload Support Check [ Brazillian Models Do Not Support It ]
+if [[ "$(echo $COUNTRY_CODE | grep -c 'BR')" == "1" ]]; then
+	setprop ro.audio.offload.supported 0
+	setprop audio.offload.disable 1
+else
+	setprop ro.audio.offload.supported 1
 fi
 
 log -p i -t config_init "Activating configuration $config"
