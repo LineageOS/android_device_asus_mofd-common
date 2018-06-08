@@ -3087,6 +3087,29 @@ static int responseCdmaInformationRecords(Parcel &p,
 }
 
 static void responseRilSignalStrengthV5(Parcel &p, RIL_SignalStrength_v10 *p_cur) {
+    /*
+     * Hacked Signal Strengths from Modem Logs
+     * Always Output a Strength, Even If There is No Signal Present
+     */
+
+    if (p_cur->GW_SignalStrength.signalStrength < 16 && p_cur->GW_SignalStrength.signalStrength >= 0) {
+        p_cur->GW_SignalStrength.signalStrength += 10;
+    }
+
+    if (p_cur->CDMA_SignalStrength.dbm <= -44 && p_cur->CDMA_SignalStrength.dbm >= -140) {
+        p_cur->CDMA_SignalStrength.dbm = -p_cur->CDMA_SignalStrength.dbm;
+    }
+    if (p_cur->CDMA_SignalStrength.dbm <= 140 && p_cur->CDMA_SignalStrength.dbm >= 80) {
+        p_cur->CDMA_SignalStrength.dbm -= 22;
+    }
+
+    if (p_cur->EVDO_SignalStrength.dbm <= -44 && p_cur->EVDO_SignalStrength.dbm >= -140) {
+        p_cur->EVDO_SignalStrength.dbm = -p_cur->EVDO_SignalStrength.dbm;
+    }
+    if (p_cur->EVDO_SignalStrength.dbm <= 140 && p_cur->EVDO_SignalStrength.dbm >= 80) {
+        p_cur->EVDO_SignalStrength.dbm -= 22;
+    }
+
     p.writeInt32(p_cur->GW_SignalStrength.signalStrength);
     p.writeInt32(p_cur->GW_SignalStrength.bitErrorRate);
     p.writeInt32(p_cur->CDMA_SignalStrength.dbm);
@@ -3099,23 +3122,35 @@ static void responseRilSignalStrengthV5(Parcel &p, RIL_SignalStrength_v10 *p_cur
 static void responseRilSignalStrengthV6Extra(Parcel &p, RIL_SignalStrength_v10 *p_cur) {
     /*
      * Fixup LTE for backwards compatibility
+     * Hacked Signal Strengths from Modem Logs
      */
     // signalStrength: -1 -> 99
     if (p_cur->LTE_SignalStrength.signalStrength == -1) {
         p_cur->LTE_SignalStrength.signalStrength = 99;
+    } else if (p_cur->LTE_SignalStrength.signalStrength < 16) {
+        p_cur->LTE_SignalStrength.signalStrength += 10;
     }
     // rsrp: -1 -> INT_MAX all other negative value to positive.
     // So remap here
     if (p_cur->LTE_SignalStrength.rsrp == -1) {
         p_cur->LTE_SignalStrength.rsrp = INT_MAX;
-    } else if (p_cur->LTE_SignalStrength.rsrp < -1) {
+    }
+    if (p_cur->LTE_SignalStrength.rsrp <= -44 && p_cur->LTE_SignalStrength.rsrp >= -140) {
         p_cur->LTE_SignalStrength.rsrp = -p_cur->LTE_SignalStrength.rsrp;
+    }
+    if (p_cur->LTE_SignalStrength.rsrp <= 140 && p_cur->LTE_SignalStrength.rsrp >= 80) {
+        p_cur->LTE_SignalStrength.rsrp -= 22;
     }
     // rsrq: -1 -> INT_MAX
     if (p_cur->LTE_SignalStrength.rsrq == -1) {
         p_cur->LTE_SignalStrength.rsrq = INT_MAX;
+    } else if (p_cur->LTE_SignalStrength.rsrq > 14) {
+        p_cur->LTE_SignalStrength.rsrq -= 6;
     }
     // Not remapping rssnr is already using INT_MAX
+    if (p_cur->LTE_SignalStrength.rssnr < 10) {
+        p_cur->LTE_SignalStrength.rssnr = 120;
+    }
 
     // cqi: -1 -> INT_MAX
     if (p_cur->LTE_SignalStrength.cqi == -1) {
