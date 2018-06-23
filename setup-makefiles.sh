@@ -191,7 +191,7 @@ EOF
 
 LOCAL_PATH := \$(call my-dir)
 
-ifneq (\$(filter Z008 Z00A,\$(TARGET_DEVICE)),)
+ifneq (\$(filter Z008 Z00A Z00XS,\$(TARGET_DEVICE)),)
 
 include \$(CLEAR_VARS)
 LOCAL_MODULE := thermald
